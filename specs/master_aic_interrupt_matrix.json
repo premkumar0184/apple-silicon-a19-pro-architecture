@@ -1,0 +1,436 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Apple Silicon A19 Pro (t8150) Master AIC Interrupt Matrix",
+  "aic_controller": {
+    "generation": "AIC Gen3 (Apple Interrupt Controller Version 3)",
+    "base_address": "0x00000000f3c00000",
+    "total_vector_capacity": 1024,
+    "active_vectors_mapped": 184,
+    "interrupt_types": [
+      "FIQ (Fast Interrupt)",
+      "IRQ (Normal Interrupt)",
+      "NMI (Non-Maskable Interrupt)",
+      "Cross-Core IPI (Inter-Processor Interrupt)"
+    ]
+  },
+  "subsystem_allocations": {
+    "cpu_complex": [
+      {
+        "vector_dec": 68,
+        "vector_hex": "0x0044",
+        "source": "cpu0",
+        "role": "Everest Core 0 PMU Overflow / Performance Monitor"
+      },
+      {
+        "vector_dec": 71,
+        "vector_hex": "0x0047",
+        "source": "cpu1",
+        "role": "Everest Core 1 PMU Overflow / Performance Monitor"
+      },
+      {
+        "vector_dec": 74,
+        "vector_hex": "0x004a",
+        "source": "cpu2",
+        "role": "Sawtooth Core 0 PMU Overflow / Performance Monitor"
+      },
+      {
+        "vector_dec": 77,
+        "vector_hex": "0x004d",
+        "source": "cpu3",
+        "role": "Sawtooth Core 1 PMU Overflow / Performance Monitor"
+      },
+      {
+        "vector_dec": 88,
+        "vector_hex": "0x0058",
+        "source": "cpu4",
+        "role": "Sawtooth Core 2 PMU Overflow / Performance Monitor"
+      },
+      {
+        "vector_dec": 91,
+        "vector_hex": "0x005b",
+        "source": "cpu5",
+        "role": "Sawtooth Core 3 PMU Overflow / Performance Monitor"
+      }
+    ],
+    "secure_enclave": [
+      {
+        "vector_dec": 304,
+        "vector_hex": "0x0130",
+        "source": "/device-tree/arm-io/sep",
+        "role": "Host-to-SEP Mailbox Inbox Message Pending"
+      },
+      {
+        "vector_dec": 305,
+        "vector_hex": "0x0131",
+        "source": "/device-tree/arm-io/sep",
+        "role": "SEP-to-Host Mailbox Outbox Message Consumed / Ack"
+      },
+      {
+        "vector_dec": 306,
+        "vector_hex": "0x0132",
+        "source": "/device-tree/arm-io/sep",
+        "role": "SEP Doorbell Interrupt Trigger"
+      },
+      {
+        "vector_dec": 307,
+        "vector_hex": "0x0133",
+        "source": "/device-tree/arm-io/sep",
+        "role": "SEP System Error / Panic Telemetry Interrupt"
+      },
+      {
+        "vector_dec": 308,
+        "vector_hex": "0x0134",
+        "source": "/device-tree/arm-io/esm",
+        "role": "Embedded Security Module Normal Event"
+      },
+      {
+        "vector_dec": 311,
+        "vector_hex": "0x0137",
+        "source": "/device-tree/arm-io/esm",
+        "role": "Embedded Security Module Tamper Alarm"
+      },
+      {
+        "vector_dec": 314,
+        "vector_hex": "0x013a",
+        "source": "/device-tree/arm-io/dart-sep",
+        "role": "DART-SEP IOMMU Translation Fault"
+      },
+      {
+        "vector_dec": 1041,
+        "vector_hex": "0x0411",
+        "source": "/device-tree/arm-io/aes",
+        "role": "Hardware AES Cryptographic Engine Complete"
+      }
+    ],
+    "always_on_processor": [
+      {
+        "vector_dec": 349,
+        "vector_hex": "0x015d",
+        "source": "/device-tree/arm-io/aop",
+        "role": "AOP1 Mailbox Inbox"
+      },
+      {
+        "vector_dec": 350,
+        "vector_hex": "0x015e",
+        "source": "/device-tree/arm-io/aop",
+        "role": "AOP1 Mailbox Outbox"
+      },
+      {
+        "vector_dec": 351,
+        "vector_hex": "0x015f",
+        "source": "/device-tree/arm-io/aop",
+        "role": "AOP1 Doorbell"
+      },
+      {
+        "vector_dec": 352,
+        "vector_hex": "0x0160",
+        "source": "/device-tree/arm-io/aop",
+        "role": "AOP1 Error"
+      },
+      {
+        "vector_dec": 353,
+        "vector_hex": "0x0161",
+        "source": "/device-tree/arm-io/aop-exclave-mailbox",
+        "role": "AOP1 Exclave Proxy Inbox"
+      },
+      {
+        "vector_dec": 356,
+        "vector_hex": "0x0164",
+        "source": "/device-tree/arm-io/aop-exclave-mailbox",
+        "role": "AOP1 Exclave Proxy Outbox"
+      },
+      {
+        "vector_dec": 357,
+        "vector_hex": "0x0165",
+        "source": "/device-tree/arm-io/aop2",
+        "role": "AOP2 Primary Mailbox Inbox Message Pending"
+      },
+      {
+        "vector_dec": 358,
+        "vector_hex": "0x0166",
+        "source": "/device-tree/arm-io/aop2",
+        "role": "AOP2 Primary Mailbox Outbox Ack"
+      },
+      {
+        "vector_dec": 359,
+        "vector_hex": "0x0167",
+        "source": "/device-tree/arm-io/aop2",
+        "role": "AOP2 Doorbell Aggregator Trigger"
+      },
+      {
+        "vector_dec": 360,
+        "vector_hex": "0x0168",
+        "source": "/device-tree/arm-io/aop2",
+        "role": "AOP2 Hardware Error / RTKit Panic Notification"
+      },
+      {
+        "vector_dec": 361,
+        "vector_hex": "0x0169",
+        "source": "/device-tree/arm-io/aop2-exclave-mailbox",
+        "role": "AOP2 Exclave Mailbox Proxy Inbox"
+      },
+      {
+        "vector_dec": 364,
+        "vector_hex": "0x016c",
+        "source": "/device-tree/arm-io/aop2-exclave-mailbox",
+        "role": "AOP2 Exclave Mailbox Proxy Outbox"
+      },
+      {
+        "vector_dec": 387,
+        "vector_hex": "0x0183",
+        "source": "/device-tree/arm-io/dart-aop",
+        "role": "DART-AOP IOMMU Translation Fault"
+      }
+    ],
+    "graphics_and_pmp": [
+      {
+        "vector_dec": 776,
+        "vector_hex": "0x0308",
+        "source": "/device-tree/arm-io/pmp",
+        "role": "PMP Mailbox Inbox"
+      },
+      {
+        "vector_dec": 777,
+        "vector_hex": "0x0309",
+        "source": "/device-tree/arm-io/pmp",
+        "role": "PMP Mailbox Outbox"
+      },
+      {
+        "vector_dec": 778,
+        "vector_hex": "0x030a",
+        "source": "/device-tree/arm-io/pmp",
+        "role": "PMP Doorbell"
+      },
+      {
+        "vector_dec": 779,
+        "vector_hex": "0x030b",
+        "source": "/device-tree/arm-io/pmp",
+        "role": "PMP Error"
+      },
+      {
+        "vector_dec": 780,
+        "vector_hex": "0x030c",
+        "source": "/device-tree/arm-io/dart-pmp",
+        "role": "DART-PMP IOMMU Translation Fault"
+      },
+      {
+        "vector_dec": 933,
+        "vector_hex": "0x03a5",
+        "source": "/device-tree/arm-io/sgx",
+        "role": "AGX G18 Shader Core Cluster 0 Context Done"
+      },
+      {
+        "vector_dec": 934,
+        "vector_hex": "0x03a6",
+        "source": "/device-tree/arm-io/sgx",
+        "role": "AGX G18 Shader Core Cluster 1 Context Done"
+      },
+      {
+        "vector_dec": 935,
+        "vector_hex": "0x03a7",
+        "source": "/device-tree/arm-io/sgx",
+        "role": "AGX G18 BVH Ray Tracing Accelerator Complete"
+      },
+      {
+        "vector_dec": 936,
+        "vector_hex": "0x03a8",
+        "source": "/device-tree/arm-io/sgx",
+        "role": "AGX G18 Hardware Fault / Tile Memory Overflow"
+      },
+      {
+        "vector_dec": 952,
+        "vector_hex": "0x03b8",
+        "source": "/device-tree/arm-io/gfx-asc",
+        "role": "RTBuddy Core 0 Mailbox Inbox"
+      },
+      {
+        "vector_dec": 953,
+        "vector_hex": "0x03b9",
+        "source": "/device-tree/arm-io/gfx-asc",
+        "role": "RTBuddy Core 0 Mailbox Outbox"
+      },
+      {
+        "vector_dec": 954,
+        "vector_hex": "0x03ba",
+        "source": "/device-tree/arm-io/gfx-asc",
+        "role": "RTBuddy Core 0 Doorbell"
+      },
+      {
+        "vector_dec": 955,
+        "vector_hex": "0x03bb",
+        "source": "/device-tree/arm-io/gfx-asc",
+        "role": "RTBuddy Core 0 Error"
+      },
+      {
+        "vector_dec": 956,
+        "vector_hex": "0x03bc",
+        "source": "/device-tree/arm-io/gfx1-asc",
+        "role": "RTBuddy Core 1 Mailbox Inbox"
+      },
+      {
+        "vector_dec": 957,
+        "vector_hex": "0x03bd",
+        "source": "/device-tree/arm-io/gfx1-asc",
+        "role": "RTBuddy Core 1 Mailbox Outbox"
+      },
+      {
+        "vector_dec": 958,
+        "vector_hex": "0x03be",
+        "source": "/device-tree/arm-io/gfx1-asc",
+        "role": "RTBuddy Core 1 Doorbell"
+      },
+      {
+        "vector_dec": 959,
+        "vector_hex": "0x03bf",
+        "source": "/device-tree/arm-io/gfx1-asc",
+        "role": "RTBuddy Core 1 Error"
+      }
+    ],
+    "neural_engine": [
+      {
+        "vector_dec": 607,
+        "vector_hex": "0x025f",
+        "source": "/device-tree/arm-io/ane",
+        "role": "ANE H18 Layer Execution Complete / Task Finished"
+      },
+      {
+        "vector_dec": 608,
+        "vector_hex": "0x0260",
+        "source": "/device-tree/arm-io/dart-ane",
+        "role": "DART-ANE IOMMU Translation Fault"
+      },
+      {
+        "vector_dec": 620,
+        "vector_hex": "0x026c",
+        "source": "/device-tree/arm-io/ane",
+        "role": "ANE Hardware Mailbox FIFO Interrupt"
+      }
+    ],
+    "display_and_dcp": [
+      {
+        "vector_dec": 632,
+        "vector_hex": "0x0278",
+        "source": "/device-tree/arm-io/dcp",
+        "role": "DCP Mailbox Inbox"
+      },
+      {
+        "vector_dec": 633,
+        "vector_hex": "0x0279",
+        "source": "/device-tree/arm-io/dcp",
+        "role": "DCP Mailbox Outbox"
+      },
+      {
+        "vector_dec": 634,
+        "vector_hex": "0x027a",
+        "source": "/device-tree/arm-io/dcp",
+        "role": "DCP Doorbell"
+      },
+      {
+        "vector_dec": 635,
+        "vector_hex": "0x027b",
+        "source": "/device-tree/arm-io/dcp",
+        "role": "DCP Error"
+      },
+      {
+        "vector_dec": 636,
+        "vector_hex": "0x027c",
+        "source": "/device-tree/arm-io/dcp-exclave-mailbox",
+        "role": "DCP Exclave Mailbox Inbox"
+      },
+      {
+        "vector_dec": 639,
+        "vector_hex": "0x027f",
+        "source": "/device-tree/arm-io/dcp-exclave-mailbox",
+        "role": "DCP Exclave Mailbox Outbox"
+      },
+      {
+        "vector_dec": 640,
+        "vector_hex": "0x0280",
+        "source": "/device-tree/arm-io/disp0",
+        "role": "Display VSYNC Interrupt"
+      },
+      {
+        "vector_dec": 642,
+        "vector_hex": "0x0282",
+        "source": "/device-tree/arm-io/disp0",
+        "role": "Display Teardown / Line Counter"
+      },
+      {
+        "vector_dec": 651,
+        "vector_hex": "0x028b",
+        "source": "/device-tree/arm-io/dart-dcp",
+        "role": "DART-DCP IOMMU Translation Fault"
+      }
+    ],
+    "storage_and_nand": [
+      {
+        "vector_dec": 972,
+        "vector_hex": "0x03cc",
+        "source": "/device-tree/arm-io/ans",
+        "role": "ANS NVRAM Command Ring 0 Complete"
+      },
+      {
+        "vector_dec": 973,
+        "vector_hex": "0x03cd",
+        "source": "/device-tree/arm-io/ans",
+        "role": "SART-ANS IOMMU Fault"
+      },
+      {
+        "vector_dec": 974,
+        "vector_hex": "0x03ce",
+        "source": "/device-tree/arm-io/ans",
+        "role": "ANS NVRAM Command Ring 1 Complete"
+      },
+      {
+        "vector_dec": 975,
+        "vector_hex": "0x03cf",
+        "source": "/device-tree/arm-io/ans",
+        "role": "ANS Flash Memory Controller Interrupt"
+      }
+    ],
+    "connectivity_and_pcie": [
+      {
+        "vector_dec": 1139,
+        "vector_hex": "0x0473",
+        "source": "/device-tree/arm-io/apcie",
+        "role": "PCIe Port 0 Link State Change"
+      },
+      {
+        "vector_dec": 1140,
+        "vector_hex": "0x0474",
+        "source": "/device-tree/arm-io/apcie",
+        "role": "PCIe Port 0 MSI Vector Aggregation"
+      },
+      {
+        "vector_dec": 1141,
+        "vector_hex": "0x0475",
+        "source": "/device-tree/arm-io/apcie",
+        "role": "PCIe Port 1 Link State Change"
+      },
+      {
+        "vector_dec": 1142,
+        "vector_hex": "0x0476",
+        "source": "/device-tree/arm-io/dart-apcie0",
+        "role": "DART-APCIE0 IOMMU Fault"
+      },
+      {
+        "vector_dec": 1149,
+        "vector_hex": "0x047d",
+        "source": "/device-tree/arm-io/apcie",
+        "role": "PCIe Port 1 MSI Vector Aggregation"
+      },
+      {
+        "vector_dec": 1150,
+        "vector_hex": "0x047e",
+        "source": "/device-tree/arm-io/dart-apcie1",
+        "role": "DART-APCIE1 IOMMU Fault"
+      },
+      {
+        "vector_dec": 1173,
+        "vector_hex": "0x0495",
+        "source": "/device-tree/arm-io/dart-usb0",
+        "role": "DART-USB0 IOMMU Fault"
+      }
+    ]
+  }
+}
