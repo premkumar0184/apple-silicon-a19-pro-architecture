@@ -155,6 +155,7 @@ This master architecture manual synthesizes research across 12 specialized clean
 - [**apple-ave2-codecs-re**](https://github.com/premkumar0184/apple-ave2-codecs-re): Apple Video Encoder 2 (AVE2) Hardware Compression Pipeline
 - [**apple-dcp-promotion-re**](https://github.com/premkumar0184/apple-dcp-promotion-re): Display Co-Processor (DCP), ProMotion (1Hz-120Hz) & Scanout
 - [**apple-ans2-nvme-re**](https://github.com/premkumar0184/apple-ans2-nvme-re): Apple NVMe Storage Controller (ANS2) & Hardware AES-XTS DMA
+- [**apple-audio-subsystem-re**](https://github.com/premkumar0184/apple-audio-subsystem-re): Apple Audio Subsystem & SmartIO (ASCv7) Coprocessor (ADMAC, Cirrus Logic Codecs, AOPAudio2 & Exclave Privacy Isolation)
 
 ---
 
