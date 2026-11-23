@@ -85,7 +85,7 @@ Full mapping of 9 security domains and 11 cross-domain boundary crossings:
 ```
 .
 ├── docs/
-│   ├── APPLE_SILICON_A19_PRO_ARCHITECTURE_BOOK.md   # Master Publication Book (102 KB, 21 Parts)
+│   ├── APPLE_SILICON_A19_PRO_ARCHITECTURE_BOOK.md   # Master Publication Book (141 KB, 23 Parts)
 │   ├── AUDIT_MASTER_EXTRACTION_FINDINGS.md         # Forensic Audit Dossier (All 63 Phases Verified)
 │   ├── 01A_WORKSPACE_BASELINE.md                   # SoC Platform Baseline & Synthesis Inventory
 │   ├── 01B_GLOBAL_MEMORY_MAP.md                    # 32 GB DRAM & SRAM Geometry Analysis
@@ -142,8 +142,9 @@ gcc -fsyntax-only -Wall -Wextra runtime/a19_pro_cross_enclave_router.pseudo.c
 
 ## Specialized Subsystem Research Repositories
 
-This master architecture manual synthesizes research across 11 specialized clean-room reverse-engineering repositories:
+This master architecture manual synthesizes research across 12 specialized clean-room reverse-engineering repositories:
 
+- [**apple-silenus-isp-re**](https://github.com/premkumar0184/apple-silenus-isp-re): Apple Silenus ISP & Bayer Neural Interface (Photonic Engine, VISPIPE DMA, Deep Fusion MSTF, 60fps Semantic Masks)
 - [**apple-centauri-wireless-re**](https://github.com/premkumar0184/apple-centauri-wireless-re): Apple Centauri In-House Wireless Silicon (Wi-Fi 7 802.11be, Bluetooth 5.4/6.0, DriverKit ACIPC)
 - [**apple-sptm-txm-re**](https://github.com/premkumar0184/apple-sptm-txm-re): Secure Page Table Monitor (GL2) & Trusted Execution Monitor (GL1)
 - [**apple-sepos-crypto-re**](https://github.com/premkumar0184/apple-sepos-crypto-re): Secure Enclave Processor (SEP Gen 5), sepOS & Hardware Key Ladder
