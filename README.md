@@ -140,6 +140,23 @@ gcc -fsyntax-only -Wall -Wextra runtime/a19_pro_cross_enclave_router.pseudo.c
 
 ---
 
+## Specialized Subsystem Research Repositories
+
+This master architecture manual synthesizes research across 11 specialized clean-room reverse-engineering repositories:
+
+- [**apple-centauri-wireless-re**](https://github.com/premkumar0184/apple-centauri-wireless-re): Apple Centauri In-House Wireless Silicon (Wi-Fi 7 802.11be, Bluetooth 5.4/6.0, DriverKit ACIPC)
+- [**apple-sptm-txm-re**](https://github.com/premkumar0184/apple-sptm-txm-re): Secure Page Table Monitor (GL2) & Trusted Execution Monitor (GL1)
+- [**apple-sepos-crypto-re**](https://github.com/premkumar0184/apple-sepos-crypto-re): Secure Enclave Processor (SEP Gen 5), sepOS & Hardware Key Ladder
+- [**apple-neural-engine-h18-re**](https://github.com/premkumar0184/apple-neural-engine-h18-re): Apple Neural Engine H18 (Apollo v5x), HWX Compiler & ISA
+- [**apple-agx-gpu-g18-re**](https://github.com/premkumar0184/apple-agx-gpu-g18-re): Apple AGX "G18" Ray-Tracing GPU Subsystem & Metal DriverKit
+- [**apple-exclaveos-tightbeam-re**](https://github.com/premkumar0184/apple-exclaveos-tightbeam-re): ExclaveOS cL4 Microkernel & Tightbeam RPC Wire Format
+- [**apple-aop-rtkit**](https://github.com/premkumar0184/apple-aop-rtkit): Always-On Processor 2 (AOP2) 64-bit RTKit & Sensor Hub
+- [**apple-ave2-codecs-re**](https://github.com/premkumar0184/apple-ave2-codecs-re): Apple Video Encoder 2 (AVE2) Hardware Compression Pipeline
+- [**apple-dcp-promotion-re**](https://github.com/premkumar0184/apple-dcp-promotion-re): Display Co-Processor (DCP), ProMotion (1Hz-120Hz) & Scanout
+- [**apple-ans2-nvme-re**](https://github.com/premkumar0184/apple-ans2-nvme-re): Apple NVMe Storage Controller (ANS2) & Hardware AES-XTS DMA
+
+---
+
 ## License
 
 This project is released under the **MIT License**. See [`LICENSE`](LICENSE) for full details.
