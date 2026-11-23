@@ -86,6 +86,7 @@ Full mapping of 9 security domains and 11 cross-domain boundary crossings:
 .
 ├── docs/
 │   ├── APPLE_SILICON_A19_PRO_ARCHITECTURE_BOOK.md   # Master Publication Book (102 KB, 21 Parts)
+│   ├── AUDIT_MASTER_EXTRACTION_FINDINGS.md         # Forensic Audit Dossier (All 63 Phases Verified)
 │   ├── 01A_WORKSPACE_BASELINE.md                   # SoC Platform Baseline & Synthesis Inventory
 │   ├── 01B_GLOBAL_MEMORY_MAP.md                    # 32 GB DRAM & SRAM Geometry Analysis
 │   ├── 02_UNIFIED_DART_IOMMU_LEDGER.md             # 25 DART Controllers & Stream ID Routing
