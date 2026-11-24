@@ -142,7 +142,7 @@ gcc -fsyntax-only -Wall -Wextra runtime/a19_pro_cross_enclave_router.pseudo.c
 
 ## Specialized Subsystem Research Repositories
 
-This master architecture manual synthesizes research across 13 specialized clean-room reverse-engineering repositories:
+This master architecture manual synthesizes research across 15 specialized clean-room reverse-engineering repositories:
 
 - [**apple-silenus-isp-re**](https://github.com/premkumar0184/apple-silenus-isp-re): Apple Silenus ISP & Bayer Neural Interface (Photonic Engine, VISPIPE DMA, Deep Fusion MSTF, 60fps Semantic Masks)
 - [**apple-centauri-wireless-re**](https://github.com/premkumar0184/apple-centauri-wireless-re): Apple Centauri In-House Wireless Silicon (Wi-Fi 7 802.11be, Bluetooth 5.4/6.0, DriverKit ACIPC)
@@ -157,6 +157,7 @@ This master architecture manual synthesizes research across 13 specialized clean
 - [**apple-ans2-nvme-re**](https://github.com/premkumar0184/apple-ans2-nvme-re): Apple NVMe Storage Controller (ANS2) & Hardware AES-XTS DMA
 - [**apple-audio-subsystem-re**](https://github.com/premkumar0184/apple-audio-subsystem-re): Apple Audio Subsystem & SmartIO (ASCv7) Coprocessor (ADMAC, Cirrus Logic Codecs, AOPAudio2 & Exclave Privacy Isolation)
 - [**apple-pmic-spmi-re**](https://github.com/premkumar0184/apple-pmic-spmi-re): Apple Power Management IC (PMIC) & SPMI Telemetry Fabric (Brooklands, SPMI Dual-Bus, DVFS & Battery 4RC Model)
+- [**ios-27-springboard-compositor-re**](https://github.com/premkumar0184/ios-27-springboard-compositor-re): SpringBoard UI Compositor, Dynamic Island & Gestural Multitasking (System Aperture, Fluid Switcher Deck & Spring Physics, FrontBoard Scene Lifecycle & Window Level Arbitration)
 
 ---
 
